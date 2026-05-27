@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Disposable Camera",
+    "slug": "disposable-camera",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "disposablecamera",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Disposable Camera uses your camera to take temporary photos that are stored inside the app."
+        }
+      ],
+      "expo-router"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lukebrush.disposablecamera"
+    },
+    "android": {
+      "package": "com.lukebrush.disposablecamera",
+      "permissions": ["CAMERA"]
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}
